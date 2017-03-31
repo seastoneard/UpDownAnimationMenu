@@ -14,7 +14,7 @@
 <p><span style="color:rgb(51,51,51); font-family:Arial"><span style="font-family:宋体; text-align:center; background-color:rgb(249,249,249)"><span style="font-size:14px"><strong>效果：</strong></span></span></span></p>
 <p><span style="color:rgb(51,51,51); font-family:Arial"><span style="font-family:宋体; text-align:center; background-color:rgb(249,249,249)"><span style="font-size:14px"><strong><br>
 </strong></span></span></span></p>
-<p style="text-align:left"><span style="color:rgb(51,51,51); font-family:Arial"><span style="font-family:宋体; text-align:center; background-color:rgb(249,249,249)"><span style="font-size:14px"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="http://img.blog.csdn.net/20170331172148670?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhoX2NzZG5fYXJk/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" width="320" height="520" alt=""><br>
+<p style="text-align:left"><span style="color:rgb(51,51,51); font-family:Arial"><span style="font-family:宋体; text-align:center; background-color:rgb(249,249,249)"><span style="font-size:14px"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="http://images2015.cnblogs.com/blog/1130112/201703/1130112-20170331212642180-233844519.gif" alt=""><br>
 </strong></span></span></span></p>
 <p style="text-align:left"><span style="color:rgb(51,51,51); font-family:Arial"><span style="font-family:宋体; text-align:center; background-color:rgb(249,249,249)"><span style="font-size:14px"><strong><br>
 </strong></span></span></span></p>
@@ -105,6 +105,7 @@
         mBottomBar.mapColorForTab(3, ContextCompat.getColor(this, R.color.orange));
         setMsg();
     }
+    
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -126,12 +127,12 @@
 
 
 
-private void defaultFragment(Fragment fragment) {
+  private void defaultFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         transaction = fm.beginTransaction();
         transaction.add(R.id.main_fragment_layout, fragment);
         transaction.commit();
-    }
+   }
 
     private void setMsg() {
         // 为tab设置一个标签，“信息”提示的数字
@@ -140,7 +141,7 @@ private void defaultFragment(Fragment fragment) {
 
         // 设置显示或隐藏
         unreadMessages.show();
-//        unreadMessages.hide();
+  //        unreadMessages.hide();
         // 设置显示的数字
         unreadMessages.setCount(4);
 
