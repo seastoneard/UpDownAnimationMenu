@@ -113,7 +113,9 @@
         mBottomBar.onSaveInstanceState(outState);
     }
 
-    private void replaceFragment(Fragment fragment) {
+  
+  
+  private void replaceFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         transaction = fm.beginTransaction();
         transaction.replace(R.id.main_fragment_layout, fragment);
@@ -122,7 +124,9 @@
 
     }
 
-    private void defaultFragment(Fragment fragment) {
+
+
+private void defaultFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         transaction = fm.beginTransaction();
         transaction.add(R.id.main_fragment_layout, fragment);
@@ -148,10 +152,7 @@
     }</pre><br>
 <br>
 </p>
-<p style="text-align:left"><br>
-</p>
-
-   
+  
 </div>
 
 
